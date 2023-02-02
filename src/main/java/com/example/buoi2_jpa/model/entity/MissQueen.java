@@ -1,4 +1,4 @@
-package com.example.buoi2_jpa.model;
+package com.example.buoi2_jpa.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,8 +14,10 @@ public class MissQueen implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String name;
     private double height;
     private double weight;
+    @OneToOne
+    @JoinColumn(name = "crown_id")
+    private Crown crown;
 }

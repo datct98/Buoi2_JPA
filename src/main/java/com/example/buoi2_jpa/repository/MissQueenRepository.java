@@ -1,7 +1,6 @@
 package com.example.buoi2_jpa.repository;
 
-import com.example.buoi2_jpa.model.MissQueen;
-import org.hibernate.annotations.Parameter;
+import com.example.buoi2_jpa.model.entity.MissQueen;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
